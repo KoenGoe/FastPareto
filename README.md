@@ -10,8 +10,9 @@ Fast implementations for finding the pareto front in a large set of points
   testdata = np.random.randn(1000000,2) #one million test points
   t = timeit.timeit('pareto(testdata)', globals=globals(),number=10)/10
   print(str(t)+' seconds for finding pareto points in a set of 1 million 2d points')
-  #>> 0.2959234861191362 seconds for finding pareto points in a set of 1 million 2d points```
-* A far less but still rather quick python-numpy implemention for more than 2 costs:
+  #>> 0.2959234861191362 seconds for finding pareto points in a set of 1 million 2d points
+  ```
+* A less quick python-numpy implemention for more than 2 costs:
   ```python
   import numpy as np
   from fastpareto import pareto
@@ -19,7 +20,9 @@ Fast implementations for finding the pareto front in a large set of points
   testdata = np.random.randn(1000000,3) #one million test points
   t = timeit.timeit('pareto(testdata)', globals=globals(),number=10)/10
   print(str(t)+' seconds for finding pareto points in a set of 1 million 3d points')
-  #>> 6.359629309689626 seconds for finding pareto points in a set of 1 million 3d points```
+  #>> 6.359629309689626 seconds for finding pareto points in a set of 1 million 3d points
+  ```
+  In this case, [Peter's answer on StackOverflow](https://stackoverflow.com/questions/32791911/fast-calculation-of-pareto-front-in-python) seems to be quicker and is thus recommended.
   
 ## Todo:
 * Faster python implementation for more than 2 costs
