@@ -1,5 +1,5 @@
 # FastPareto
-Fast implementations for finding pareto front in set of points
+Fast implementations for finding the pareto front in a large set of points
 
 ## Done:
 * A very quick python-numpy implementation for finding pareto points out of a set of 2d points:
