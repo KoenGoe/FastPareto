@@ -24,3 +24,5 @@ Fast implementations for finding the pareto front in a large set of points
 ## Todo:
 * Faster python implementation for more than 2 costs
 * Matlab port
+## Legal:
+* License (including disclaimers): see the LICENSE file, which is a copy of the GNU GPL license.
